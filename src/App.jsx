@@ -15,7 +15,7 @@ function App() {
   console.log(data);
 
   return (
-    <div className="app">
+    <div>
       <div
         style={{
           alignItems: "center",
@@ -24,15 +24,9 @@ function App() {
         }}
       >
         <input placeholder="Enter city" style={{}} />
-        <button onClick={Weather}>Search</button>
+        <button>Search</button>
       </div>
       <div className="Results">
-        <div className="Location">Bronx</div>
-        <div className="Temp">33°F</div>
-        <div className="Description">Cloudy</div>
-        <div className="Feels">Cool</div>
-      </div>
-      <div className="Favorites">
         <div className="Location">Bronx</div>
         <div className="Temp">33°F</div>
         <div className="Description">Cloudy</div>
