@@ -12,25 +12,24 @@ function App() {
       .then((result) => setData(result));
   }, []);
 
-  console.log(data);
+  // console.log(data);
 
   return (
-    <div>
-      <div
-        style={{
-          alignItems: "center",
-          justifyContent: "center",
-          height: "100vh",
-        }}
-      >
-        <input placeholder="Enter city" style={{}} />
+    <div className="app">
+      <div className="search">
+        <input placeholder="Enter city" style={{ fontSize: "25px" }} />
         <button>Search</button>
       </div>
-      <div className="Results">
-        <div className="Location">Bronx</div>
-        <div className="Temp">33°F</div>
-        <div className="Description">Cloudy</div>
-        <div className="Feels">Cool</div>
+      <div className="results">
+        <div className="top" style={{ fontSize: "45px" }}>
+          <div className="location">Bronx</div>
+          <div className="temp">33°F</div>
+        </div>
+        <div className="bottom" style={{ fontSize: "25px" }}>
+          <div className="description">Cloudy</div>
+          <div className="feels">Cool</div>
+          <div className="temp-minmax">30°F / 45°F</div>
+        </div>
       </div>
     </div>
   );
