@@ -26,9 +26,12 @@ function App() {
           <div className="temp">33°F</div>
         </div>
         <div className="bottom" style={{ fontSize: "25px" }}>
-          <div className="description">Cloudy</div>
-          <div className="feels">Cool</div>
-          <div className="temp-minmax">30°F / 45°F</div>
+          <div className="description">Description</div>
+          <div className="feels">Feels</div>
+          <div className="temp-minmax">Temp Min/Max</div>
+          <div className="description-word">Clear Sky</div>
+          <div className="feels-word">271.52</div>
+          <div className="temp-minmax-word">271.17/274.98</div>
         </div>
       </div>
     </div>
