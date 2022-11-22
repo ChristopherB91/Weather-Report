@@ -41,9 +41,16 @@ body{
 .bottom{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  border: 1px royalblue solid;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.7);
   position: relative;
   top: 300px;
   left: 450px;
   width: 55%;
+}
+
+.description, .feels, .temp-minmax{
+  display: flex;
+  justify-content: center;
+  
 }
