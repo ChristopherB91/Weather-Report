@@ -29,9 +29,9 @@ function App() {
           <div className="description">Description</div>
           <div className="feels">Feels</div>
           <div className="temp-minmax">Temp Min/Max</div>
-          <div className="description-word">Clear Sky</div>
-          <div className="feels-word">271.52</div>
-          <div className="temp-minmax-word">271.17/274.98</div>
+          <div className="description">Clear Sky</div>
+          <div className="feels">271.52</div>
+          <div className="temp-minmax">271.17/274.98</div>
         </div>
       </div>
     </div>
