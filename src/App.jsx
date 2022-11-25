@@ -30,17 +30,17 @@ function App() {
         />
       </div>
       <div className="results">
-        <div className="top" style={{ fontSize: "45px" }}>
-          <div className="location">{data.name}</div>
-          <div className="temp">33°F</div>
+        <div className="top" >
+          <div className="location" style={{ fontSize: "45px" }}>{data.name}</div>
+          <div className="temp" style={{ fontSize: "25px" }}>{data.main ? <h1>{data.main.temp}</h1> : null}</div>
         </div>
-        <div className="bottom" style={{ fontSize: "25px" }}>
-          <div className="description">Description</div>
-          <div className="feels">Feels</div>
-          <div className="temp-minmax">Temp Min/Max</div>
-          <div className="description">Clear Sky</div>
-          <div className="feels">271.52</div>
-          <div className="temp-minmax">271.17/274.98</div>
+        <div className="bottom" >
+          <div className="description"><h1>Description</h1></div>
+          <div className="feels"><h1>Feels</h1></div>
+          <div className="temp-minmax"><h1>Temp Min/Max</h1></div>
+          <div className="description" style={{ fontSize: "30px" }}>{data.weather ? <p>{data.weather[0].main}</p> : null}</div>
+          <div className="feels" style={{ fontSize: "30px" }}>{data.main ? <p>{data.main.feels_like}</p> : null}</div>
+          <div className="temp-minmax" style={{ fontSize: "30px" }}>{data.main ? <p>{data.main.temp_min} / {data.main.temp_max}</p> : null}</div>
         </div>
       </div>
     </div>
@@ -48,12 +48,3 @@ function App() {
 }
 
 export default App;
-
-
-// useEffect(() => {
-//   fetch(url)
-//     .then((response) => response.json())
-//     .then((result) => setData(result));
-//   console.log(data);
-//   console.log(location);
-// }, []);
