@@ -34,6 +34,8 @@ function App() {
           <div className="location" style={{ fontSize: "45px" }}>{data.name}</div>
           <div className="temp" style={{ fontSize: "25px" }}>{data.main ? <h1>{data.main.temp}</h1> : null}</div>
         </div>
+        <br/>
+        <br/>
         <div className="bottom" >
           <div className="description"><h1>Description</h1></div>
           <div className="feels"><h1>Feels</h1></div>
